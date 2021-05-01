@@ -22,6 +22,8 @@ theme configure --password=$SHOPIFY_APP_API_PASSWORD --store=$SHOPIFY_STORE_URL 
 echo "Downloading theme files"
 theme download
 
+echo "Version control 1"
+
 git add .
 
 if ! git diff-index --quiet HEAD --; then
